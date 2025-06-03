@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.order_processing_system.OrderProcessingSystemApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.928 s -- in com.example.order_processing_system.OrderProcessingSystemApplicationTests
