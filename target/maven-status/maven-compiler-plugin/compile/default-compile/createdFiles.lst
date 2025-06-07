@@ -1,8 +1,8 @@
 com/example/order_processing_system/repository/OrderRepository.class
+com/example/order_processing_system/service/OrderEventProducer.class
+com/example/order_processing_system/controller/HelloController.class
+com/example/order_processing_system/OrderProcessingSystemApplication.class
 com/example/order_processing_system/config/KafkaProducerConfig.class
 com/example/order_processing_system/controller/OrderController.class
 com/example/order_processing_system/model/Order.class
-com/example/order_processing_system/service/OrderEventProducer.class
 com/example/order_processing_system/service/OrderService.class
-com/example/order_processing_system/controller/HelloController.class
-com/example/order_processing_system/OrderProcessingSystemApplication.class
