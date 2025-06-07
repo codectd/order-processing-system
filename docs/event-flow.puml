@@ -1,0 +1,18 @@
+@startuml OrderProcessingFlow
+actor User
+participant "OrderService" as OS
+participant "InventoryService" as IS
+participant "PaymentService" as PS
+participant "NotificationService" as NS
+
+User -> OS : Create Order
+OS -> Kafka : order.created
+Kafka -> IS : order.created
+IS -> Kafka : inventory.updated
+Kafka -> OS : inventory.updated
+OS -> Kafka : payment.initiated
+Kafka -> PS : payment.initiated
+PS -> Kafka : payment.processed
+Kafka -> OS : payment.processed
+Kafka -> NS : inventory.updated / payment.processed
+@enduml
