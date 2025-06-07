@@ -1,6 +1,13 @@
 package com.example.order_processing_system.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "orders")
@@ -17,12 +24,17 @@ public class Order {
     @Column(columnDefinition = "DOUBLE PRECISION") 
     private double price;
 
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
+
     // Constructors
     public Order() {}
-    public Order(String product, int quantity, double price) {
+
+    public Order(String product, int quantity, double price, OrderStatus status) {
         this.product = product;
         this.quantity = quantity;
         this.price = price;
+        this.status = status;
     }
 
     // Getters & Setters
@@ -37,4 +49,7 @@ public class Order {
 
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
+
+    public OrderStatus getStatus() { return status; }
+    public void setStatus(OrderStatus status) { this.status = status; }
 }

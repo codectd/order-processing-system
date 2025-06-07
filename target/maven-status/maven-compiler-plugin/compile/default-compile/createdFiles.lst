@@ -2,7 +2,6 @@ com/example/order_processing_system/repository/OrderRepository.class
 com/example/order_processing_system/model/Payment.class
 com/example/order_processing_system/service/OrderEventProducer.class
 com/example/order_processing_system/service/InventoryEventProducer.class
-com/example/order_processing_system/controller/HelloController.class
 com/example/order_processing_system/OrderProcessingSystemApplication.class
 com/example/order_processing_system/service/InventoryService.class
 com/example/order_processing_system/service/PaymentService.class

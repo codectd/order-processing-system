@@ -1,11 +1,13 @@
 package com.example.order_processing_system.service;
 
-import com.example.order_processing_system.model.Order;
-import com.example.order_processing_system.repository.OrderRepository;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.example.order_processing_system.model.Order;
+import com.example.order_processing_system.model.OrderStatus;
+import com.example.order_processing_system.repository.OrderRepository;
 
 @Service
 public class OrderService {
@@ -19,6 +21,7 @@ public class OrderService {
     }
 
     public Order createOrder(Order order) {
+        order.setStatus(OrderStatus.PENDING);
         Order savedOrder = orderRepository.save(order);
         orderEventProducer.sendOrderCreatedEvent(savedOrder);
         return savedOrder;
