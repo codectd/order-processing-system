@@ -5,10 +5,14 @@
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/model/InventoryItem.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/model/InventoryUpdate.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/model/Order.java
+/Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/model/Payment.java
+/Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/model/PaymentStatus.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/repository/InventoryItemRepository.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/repository/OrderRepository.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/InventoryEventProducer.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/InventoryService.java
+/Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/NotificationService.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/OrderEventConsumer.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/OrderEventProducer.java
 /Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/OrderService.java
+/Users/williamthompson/Documents/GitHub/order-processing-system/src/main/java/com/example/order_processing_system/service/PaymentService.java
